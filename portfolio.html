@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define os caracteres com padrão UTF-8 -->
+    <meta charset="UTF-8">
+    <title>Portfólio</title>
+
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Menu de navegação no cabeçalho da página-->
+    <header>
+        <nav>
+            <!-- Links de navegação -->
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <!-- Botão que chama função troca de tema no Javascript -->
+        <div class="tema-container">
+            <!-- Botão principal -->
+            <button onclick="toggleMenuTema()">Tema</button>
+
+            <!-- Menu oculto -->
+            <div id="menuTema" class="menu-tema">
+                <button onclick="definirTema('claro')">Tema Claro</button>
+                <button onclick="definirTema('escuro')">Tema Escuro</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Portfólio</h1>
+
+        <!-- Corpo da página com informações sobre o portifólio-->
+        <ul>
+            <li>
+                <h3>Docente do Ensino Médio e Técnico 2019 - 2024</h3>
+                <p>Atuação em itinerários formativos do ensino médio, cursos técnicos e profissionalizantes, presenciais e a distância (EaD), nas áreas de elétrica, eletrônica e automação industrial. Responsável pelo planejamento e execução de aulas teóricas, e aulas práticas aplicadas em laboratórios especializados.</p>
+                <p>Experiência na elaboração de atividades extracurriculares, acompanhamento de alunos, apoio a demandas administrativas e participação no desenvolvimento e atualização de cursos conforme as diretrizes institucionais.</p>
+                <a href="https://senaigoias.com.br/">SENAI-GO</a>
+                
+            </li>
+            <br>
+            <li>
+                <h3>Técnico em Elétrica e Automação Cargill GEOS Atomatados Goiânia 2015 - 2017</h3>
+                <p>Responsável pela manutenção elétrica corretiva e preventiva nas áreas de processo e envase. Atuação constante na manutenção e calibração de sistemas de automação e instrumentação industrial, garantindo o funcionamento eficiente e seguro dos equipamentos de controle de processos e linhas de envase.</p>
+                <p>Experiência com diagnóstico de falhas, ajustes de sistemas automatizados e suporte técnico às operações da planta.</p>
+                <a href="https://www.cargill.com.br/pt_BR/in%C3%ADcio">Cargill</a>
+            </li>
+            <br>
+            <li>
+                <h3>Projetista e Montador de Painéis Elétricos - Volga Engenharia 2012 - 2014</h3>
+                <p>Atuação no projeto de painéis elétricos de baixa tensão e montagem de painéis de baixa e média tensão. Responsável técnico pelo desenvolvimento de layouts, especificação e levantamento de componentes, além da criação de soluções personalizadas com foco em painéis elétricos da Schneider Electric.</p>
+                <p>Experiência na adequação de projetos às normas técnicas vigentes, assegurando qualidade, segurança e eficiência na entrega dos sistemas.</p>
+                <a href="https://volga.com.br/">Volga Engenharia</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

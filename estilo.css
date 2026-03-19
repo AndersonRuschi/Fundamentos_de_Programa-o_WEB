@@ -1,0 +1,126 @@
+/* Garantir margens e paddings padrão do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que padding e borda não aumentem o tamanho total */
+}
+
+/* Tema claro como padrão do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto escura */
+}
+
+/* Tema escuro: aplicado quando a classe 'Escuro' é adicionada via JavaScript */
+body.escuro {
+    background-color: #222;/* Cor de fundo escura */
+    color: #eee; /* Cor do texto clara*/
+}
+
+/* Ajuste do container no tema escuro */
+body.escuro .container {
+    background: #333;
+    color: #eee; /* texto claro */
+    border: 1px solid #555; /* borda mais suave */
+}
+
+body.escuro nav a {
+    color: #eee; /* texto claro */
+}
+
+/* Cabeçalho da página */
+header {
+    display: flex;
+    justify-content: space-between; /* separa menu e botão */
+    align-items: center;
+    padding: 10px;
+    background: #ccc;
+}
+/* cabeçalho no tema escuro */
+body.escuro header {
+    background: #444;
+}
+
+/* Links do menu */
+nav a {
+    margin: 0 10px; /* Espaçamento entre links */
+    text-decoration: none; /* Remove sublinhado */
+    color: black;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container principal (caixa de conteúdo) */
+.container {
+    width: 80%; /* Largura da área */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    border: 1px solid #000;
+    background: white;
+}
+
+/* Botão */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer; /* Mostra cursor de clique */
+}
+
+/* Botão no tema escuro */
+body.escuro button {
+    background: #555;
+    color: #fff;
+    border: none;
+}
+
+/* Container do menu */
+.tema-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menu escondido por padrão */
+.menu-tema {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1000;
+}
+
+/* Botões dentro do menu */
+.menu-tema button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Hover */
+.menu-tema button:hover {
+    background-color: #ddd;
+}
+
+/* Tema escuro */
+body.escuro .menu-tema {
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+body.escuro .menu-tema button {
+    color: #fff;
+}
+
+body.escuro .menu-tema button:hover {
+    background-color: #555;
+}

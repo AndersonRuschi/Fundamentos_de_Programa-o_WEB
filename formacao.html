@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define os caracteres com padrão UTF-8 -->
+    <meta charset="UTF-8">
+    <title>Formação</title>
+
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Menu de navegação no cabeçalho da página-->
+    <header>
+        <nav>
+            <!-- Links de navegação -->
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <!-- Botão que chama função troca de tema no Javascript -->
+        <div class="tema-container">
+            <!-- Botão principal -->
+            <button onclick="toggleMenuTema()">Tema</button>
+
+            <!-- Menu oculto -->
+            <div id="menuTema" class="menu-tema">
+                <button onclick="definirTema('claro')">Tema Claro</button>
+                <button onclick="definirTema('escuro')">Tema Escuro</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corpo da página com informações da Formação-->
+    <div class="container">
+        <h1>Formação</h1>
+        <br>
+        <h3>Graduações</h3>
+        <ol class="graduacoes">
+            <li>Superior em Tecnologia em Automação Industrial - SENAI-GO - 2016</li>
+            <li>Licenciatura em Matemática - Universidade Claretiano-SP - 2022</li>
+            <li>Superior em Tecnologia de Analise e Desenvolvimento de Sistemas-GO - Em curso</li>
+        </ol>
+        <br>
+        <h3>Pós-Graduações</h3>
+        <ol class="posGraduacoes">
+            <li>Engenharia elétrica com ênfase em instalações residenciais - UNOPAR-PR - 2024.</li>
+            <li>o	Engenharia de projetos industriais - UNOPAR-PR - 2024.</li>
+        </ol>
+        <br>
+        <h3>Idioma</h3>
+        <ol class="idioma">
+            <li>Inglês - Nível Avançado.</li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define os caracteres com padrão UTF-8 -->
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+    <!--Apenas para simulação do envio dos e-mails utilizando o EmailJS
+        
+        //Importa a biblioteca do EmailJS para envio dos e-mails.    
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        
+        // Inicializa o EmailJS com a chave pública
+        <script>
+            (function(){
+                emailjs.init("PUBLIC_KEY");
+            })();
+        </script>
+    -->
+</head>
+<body>
+    <!-- Menu de navegação no cabeçalho da página-->
+    <header>
+        <nav>
+            <!-- Links de navegação -->
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <!-- Botão que chama função troca de tema no Javascript -->
+        <div class="tema-container">
+            <!-- Botão principal -->
+            <button onclick="toggleMenuTema()">Tema</button>
+
+            <!-- Menu oculto -->
+            <div id="menuTema" class="menu-tema">
+                <button onclick="definirTema('claro')">Tema Claro</button>
+                <button onclick="definirTema('escuro')">Tema Escuro</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corpo da página com informações sobre mim-->
+    <div class="container">
+        <h1>Contato</h1>
+
+        <!-- Informações diretas -->
+        <p>Telefone/Whatsapp:(62)99240-6950</p>
+        <p>E-mail: ruschirock@gmail.com</p>
+        <br>
+        <br>
+
+        <h2>Preencha o formulário e envie a sua mensagem</h2>
+
+        <!-- Formulário de contato -->
+        <form id="formContato" onsubmit="return enviarEmail()">
+
+            <!-- Campo nome -->
+            <label>Nome:</label><br>
+            <input type="text" id="nome"><br>
+
+            <!-- Campo e-mail -->
+            <label>E-mail:</label><br>
+            <input type="text" id="email"><br>
+
+            <!-- Campo mensagem -->
+            <label>Mensagem:</label><br>
+            <textarea id="mensagem"></textarea><br>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
